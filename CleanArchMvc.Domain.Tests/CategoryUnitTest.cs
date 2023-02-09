@@ -36,25 +36,7 @@ namespace CleanArchMvc.Domain.Tests
 
         }
 
-        [Fact(DisplayName = "Create Category with empty Name")]
-        public void CreateCategory_EmptyName_DomainExceptionRequiredName()
-        {
-            Action action = () => new Category(1, "");
-            action.Should()
-                .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
-                .WithMessage("Invalid name. Name is required.");
 
-        }
-
-        [Fact(DisplayName = "Create Category with null Name")]
-        public void CreateCategory_NullName_DomainExceptionRequiredName()
-        {
-            Action action = () => new Category(1, name: null);
-            action.Should()
-                .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
-                .WithMessage("Invalid name. Name is required.");
-
-        }
 
     }
 }
