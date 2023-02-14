@@ -1,9 +1,10 @@
 ﻿using System;
 using CleanArchMvc.Domain.Entities;
 
+
 namespace CleanArchMvc.Domain.Interfaces
 {
-    public interface ICategroryRepository
+    public interface ICategoryRepository
     {
         Task<IEnumerable<Category>> GetCategoriesAsync();
         Task<Category> GetByIcAsync(int? id);
