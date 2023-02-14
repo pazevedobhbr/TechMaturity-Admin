@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using CleanArchMvc.Domain.Entities;
 
-namespace CleanArchMvc.Application.DTOS
+namespace CleanArchMvc.Application.DTOs
 {
     public class ProductDTO
     {

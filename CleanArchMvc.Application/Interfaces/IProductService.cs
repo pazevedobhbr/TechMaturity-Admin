@@ -1,5 +1,5 @@
 ﻿using System;
-using CleanArchMvc.Application.DTOS;
+using CleanArchMvc.Application.DTOs;
 
 namespace CleanArchMvc.Application.Interfaces
 {
