@@ -21,7 +21,6 @@
     <None Remove="Views\Products\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
   </ItemGroup>
   <ItemGroup>
