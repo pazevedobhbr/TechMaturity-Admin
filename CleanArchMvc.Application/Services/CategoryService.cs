@@ -43,7 +43,7 @@ namespace CleanArchMvc.Application.Services
             await _categoryRepository.UpdateAsync(categoryEntity);
         }
 
-        public async Task AddRemove(int? id)
+        public async Task Remove(int? id)
         {
             var categoryEntity = _categoryRepository.GetByIcAsync(id).Result;
             await _categoryRepository.RemoveAsync(categoryEntity);

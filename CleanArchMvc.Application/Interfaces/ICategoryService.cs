@@ -13,7 +13,7 @@ namespace CleanArchMvc.Application.Interfaces
 
         Task Update(CategoryDTO categoryDTO);
 
-        Task AddRemove(int? id);
+        Task Remove(int? id);
 
     }
 }
