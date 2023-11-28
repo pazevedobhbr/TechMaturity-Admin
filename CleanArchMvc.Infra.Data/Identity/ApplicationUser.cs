@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Identity;
 
-namespace CleanArchMvc.Infra.Data.Identity
+namespace TechMaturity.Infra.Data.Identity
 {
     public class ApplicationUser :IdentityUser
     {

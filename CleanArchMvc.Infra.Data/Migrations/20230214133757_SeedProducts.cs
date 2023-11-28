@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 
-namespace CleanArchMvc.Infra.Data.Migrations
+namespace TechMaturity.Infra.Data.Migrations
 {
     /// <inheritdoc />
     public partial class SeedProducts : Migration

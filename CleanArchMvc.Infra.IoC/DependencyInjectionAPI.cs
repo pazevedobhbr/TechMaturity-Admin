@@ -1,18 +1,18 @@
-﻿using CleanArchMvc.Application.Interfaces;
-using CleanArchMvc.Application.Mappings;
-using CleanArchMvc.Application.Services;
-using CleanArchMvc.Domain.Account;
-using CleanArchMvc.Domain.Interfaces;
-using CleanArchMvc.Infra.Data.Context;
-using CleanArchMvc.Infra.Data.Identity;
-using CleanArchMvc.Infra.Data.Repositories;
+﻿using TechMaturity.Application.Interfaces;
+using TechMaturity.Application.Mappings;
+using TechMaturity.Application.Services;
+using TechMaturity.Domain.Account;
+using TechMaturity.Domain.Interfaces;
+using TechMaturity.Infra.Data.Context;
+using TechMaturity.Infra.Data.Identity;
+using TechMaturity.Infra.Data.Repositories;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CleanArchMvc.Infra.IoC
+namespace TechMaturity.Infra.IoC
 {
     public static class DependencyInjectionAPI
     {
@@ -40,7 +40,7 @@ namespace CleanArchMvc.Infra.IoC
 
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
-            var myhandlers = AppDomain.CurrentDomain.Load("CleanArchMvc.Application");
+            var myhandlers = AppDomain.CurrentDomain.Load("TechMaturity.Application");
             services.AddMediatR(myhandlers);
 
             return services;

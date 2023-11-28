@@ -1,10 +1,10 @@
 ﻿using System;
 using AutoMapper;
-using CleanArchMvc.Application.DTOs;
-using CleanArchMvc.Application.Products.Commands;
-using CleanArchMvc.Application.Products.Queries;
+using TechMaturity.Application.DTOs;
+using TechMaturity.Application.Products.Commands;
+using TechMaturity.Application.Products.Queries;
 
-namespace CleanArchMvc.Application.Mappings
+namespace TechMaturity.Application.Mappings
 {
     public class DTOToCommandMappingProfile : Profile
     {

@@ -9,7 +9,7 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
   <ItemGroup>
-    <ProjectReference Include="..\CleanArchMvc.Infra.IoC\CleanArchMvc.Infra.IoC.csproj">
+    <ProjectReference Include="..\TechMaturity.Infra.IoC\TechMaturity.Infra.IoC.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>

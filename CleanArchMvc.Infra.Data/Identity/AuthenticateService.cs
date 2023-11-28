@@ -1,8 +1,8 @@
 ﻿using System;
-using CleanArchMvc.Domain.Account;
+using TechMaturity.Domain.Account;
 using Microsoft.AspNetCore.Identity;
 
-namespace CleanArchMvc.Infra.Data.Identity
+namespace TechMaturity.Infra.Data.Identity
 {
     public class AuthenticateService : IAuthenticate
     {

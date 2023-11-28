@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
-namespace CleanArchMvc.Infra.IoC
+namespace TechMaturity.Infra.IoC
 {
     public static class DependencyInjectionSwagger
     {
@@ -9,7 +9,7 @@ namespace CleanArchMvc.Infra.IoC
         {
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "CleanArchMvc.API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TechMaturity.API", Version = "v1" });
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
                 {

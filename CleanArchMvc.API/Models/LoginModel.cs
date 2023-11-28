@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CleanArchMvc.API.Models
+namespace TechMaturity.API.Models
 {
     public class LoginModel
     {

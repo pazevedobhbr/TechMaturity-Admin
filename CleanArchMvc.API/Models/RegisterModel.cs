@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Xml.Linq;
 
-namespace CleanArchMvc.API.Models
+namespace TechMaturity.API.Models
 {
     public class RegisterModel
     {

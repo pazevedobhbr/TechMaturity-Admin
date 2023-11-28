@@ -1,8 +1,8 @@
 ﻿using System;
-using CleanArchMvc.Domain.Entities;
+using TechMaturity.Domain.Entities;
 using MediatR;
 
-namespace CleanArchMvc.Application.Products.Commands
+namespace TechMaturity.Application.Products.Commands
 {
     public abstract class ProductCommand : IRequest<Product>
     {

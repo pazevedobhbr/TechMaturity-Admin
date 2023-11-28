@@ -1,9 +1,9 @@
 ﻿using System;
-using CleanArchMvc.Domain.Entities;
-using CleanArchMvc.Infra.Data.Identity;
+using TechMaturity.Domain.Entities;
+using TechMaturity.Infra.Data.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-namespace CleanArchMvc.Infra.Data.Context
+namespace TechMaturity.Infra.Data.Context
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

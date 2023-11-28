@@ -1,9 +1,9 @@
 ﻿using System;
-using CleanArchMvc.Domain.Entities;
+using TechMaturity.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace CleanArchMvc.Infra.Data.EntitiesConfiguration
+namespace TechMaturity.Infra.Data.EntitiesConfiguration
 {
     public class CategoryConfiguration :IEntityTypeConfiguration<Category>
     {

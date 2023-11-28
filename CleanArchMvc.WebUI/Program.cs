@@ -1,5 +1,5 @@
-using CleanArchMvc.Domain.Account;
-using CleanArchMvc.Infra.IoC;
+using TechMaturity.Domain.Account;
+using TechMaturity.Infra.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
 

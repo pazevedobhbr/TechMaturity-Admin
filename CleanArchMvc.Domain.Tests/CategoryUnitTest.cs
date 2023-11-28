@@ -1,9 +1,9 @@
 ﻿using System;
-using CleanArchMvc.Domain.Entities;
+using TechMaturity.Domain.Entities;
 using FluentAssertions;
 using Xunit;
 
-namespace CleanArchMvc.Domain.Tests
+namespace TechMaturity.Domain.Tests
 {
     public class CategoryUnitTest1
     {
@@ -12,7 +12,7 @@ namespace CleanArchMvc.Domain.Tests
         {
             Action action = () => new Category(1, "Category Name");
             action.Should()
-                .NotThrow<CleanArchMvc.Domain.Validation.DomainExceptionValidation>();
+                .NotThrow<TechMaturity.Domain.Validation.DomainExceptionValidation>();
 
         }
 
@@ -21,7 +21,7 @@ namespace CleanArchMvc.Domain.Tests
         {
             Action action = () => new Category(-1, "Category Name");
             action.Should()
-                .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+                .Throw<TechMaturity.Domain.Validation.DomainExceptionValidation>()
                 .WithMessage("Invalid Id value.");
 
         }
@@ -31,7 +31,7 @@ namespace CleanArchMvc.Domain.Tests
         {
             Action action = () => new Category(1, "Ca");
             action.Should()
-                .Throw<CleanArchMvc.Domain.Validation.DomainExceptionValidation>()
+                .Throw<TechMaturity.Domain.Validation.DomainExceptionValidation>()
                 .WithMessage("Invalid name, too short, minimum 3 characters.");
 
         }

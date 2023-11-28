@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "CleanArchMvc.API": {
+    "TechMaturity.API": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

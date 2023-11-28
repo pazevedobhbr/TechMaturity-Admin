@@ -1,7 +1,7 @@
 ﻿using System;
-using CleanArchMvc.Application.DTOs;
+using TechMaturity.Application.DTOs;
 
-namespace CleanArchMvc.Application.Interfaces
+namespace TechMaturity.Application.Interfaces
 {
     public interface IProductService
     {

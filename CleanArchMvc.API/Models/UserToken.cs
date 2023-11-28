@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CleanArchMvc.API.Models
+namespace TechMaturity.API.Models
 {
     public class UserToken
     {

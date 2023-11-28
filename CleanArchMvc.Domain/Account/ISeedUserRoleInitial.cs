@@ -1,5 +1,5 @@
 ﻿using System;
-namespace CleanArchMvc.Domain.Account
+namespace TechMaturity.Domain.Account
 {
     public interface ISeedUserRoleInitial
     {

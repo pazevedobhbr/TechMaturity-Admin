@@ -5,15 +5,15 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using CleanArchMvc.API.Models;
-using CleanArchMvc.Domain.Account;
+using TechMaturity.API.Models;
+using TechMaturity.Domain.Account;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace CleanArchMvc.API.Controllers
+namespace TechMaturity.API.Controllers
 {
     [Route("api/[controller]")]
     public class TokenController : ControllerBase

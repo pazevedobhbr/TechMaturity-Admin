@@ -5,7 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Text;
 
-namespace CleanArchMvc.Infra.IoC
+namespace TechMaturity.Infra.IoC
 {
     public static class DependencyInjectionJWT
     {

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace CleanArchMvc.Domain.Entities
+namespace TechMaturity.Domain.Entities
 {
     public abstract class Entity
     {

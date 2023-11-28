@@ -1,9 +1,9 @@
 ﻿using System;
 using AutoMapper;
-using CleanArchMvc.Application.DTOs;
-using CleanArchMvc.Domain.Entities;
+using TechMaturity.Application.DTOs;
+using TechMaturity.Domain.Entities;
 
-namespace CleanArchMvc.Application.Mappings
+namespace TechMaturity.Application.Mappings
 {
     public class DomainToDTOMappingProfile : Profile
     {

@@ -1,9 +1,9 @@
-﻿using CleanArchMvc.Domain.Account;
-using CleanArchMvc.WebUI.ViewModels;
+﻿using TechMaturity.Domain.Account;
+using TechMaturity.WebUI.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
-namespace CleanArchMvc.WebUI.Controllers
+namespace TechMaturity.WebUI.Controllers
 {
     public class AccountController : Controller
     {

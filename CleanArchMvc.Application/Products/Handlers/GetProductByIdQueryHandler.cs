@@ -1,11 +1,11 @@
-﻿using CleanArchMvc.Application.Products.Queries;
-using CleanArchMvc.Domain.Entities;
-using CleanArchMvc.Domain.Interfaces;
+﻿using TechMaturity.Application.Products.Queries;
+using TechMaturity.Domain.Entities;
+using TechMaturity.Domain.Interfaces;
 using MediatR;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CleanArchMvc.Application.Products.Handlers
+namespace TechMaturity.Application.Products.Handlers
 {
     public class GetProductByIdQueryHandler : IRequestHandler<GetProductByIdQuery, Product>
     {

@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1704.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.Domain", "CleanArchMvc.Domain\CleanArchMvc.Domain.csproj", "{E4B5124D-BFFD-40EE-AC8D-3687DA092BF2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechMaturity.Domain", "TechMaturity.Domain\TechMaturity.Domain.csproj", "{E4B5124D-BFFD-40EE-AC8D-3687DA092BF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.Application", "CleanArchMvc.Application\CleanArchMvc.Application.csproj", "{EF01ED79-0AD8-4B08-8180-0ACF02A738E0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechMaturity.Application", "TechMaturity.Application\TechMaturity.Application.csproj", "{EF01ED79-0AD8-4B08-8180-0ACF02A738E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.Infra.Data", "CleanArchMvc.Infra.Data\CleanArchMvc.Infra.Data.csproj", "{7D6A5C75-559C-4285-AAF0-1DAE8DF6AD52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechMaturity.Infra.Data", "TechMaturity.Infra.Data\TechMaturity.Infra.Data.csproj", "{7D6A5C75-559C-4285-AAF0-1DAE8DF6AD52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.Infra.IoC", "CleanArchMvc.Infra.IoC\CleanArchMvc.Infra.IoC.csproj", "{9A5C8314-88DC-4F5C-B35B-DBD3FEF61759}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechMaturity.Infra.IoC", "TechMaturity.Infra.IoC\TechMaturity.Infra.IoC.csproj", "{9A5C8314-88DC-4F5C-B35B-DBD3FEF61759}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.WebUI", "CleanArchMvc.WebUI\CleanArchMvc.WebUI.csproj", "{B071B736-77B4-46F7-8186-3612726FA9AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechMaturity.WebUI", "TechMaturity.WebUI\TechMaturity.WebUI.csproj", "{B071B736-77B4-46F7-8186-3612726FA9AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.Domain.Tests", "CleanArchMvc.Domain.Tests\CleanArchMvc.Domain.Tests.csproj", "{33698D96-2796-4E14-9144-24CAD82ECE9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechMaturity.Domain.Tests", "TechMaturity.Domain.Tests\TechMaturity.Domain.Tests.csproj", "{33698D96-2796-4E14-9144-24CAD82ECE9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchMvc.API", "CleanArchMvc.API\CleanArchMvc.API.csproj", "{79441A28-BD1F-445B-AA60-BAA0A5ADD95A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechMaturity.API", "TechMaturity.API\TechMaturity.API.csproj", "{79441A28-BD1F-445B-AA60-BAA0A5ADD95A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

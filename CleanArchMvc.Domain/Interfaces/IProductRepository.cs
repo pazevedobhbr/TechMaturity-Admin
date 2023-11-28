@@ -1,6 +1,6 @@
 ﻿using System;
-using CleanArchMvc.Domain.Entities;
-namespace CleanArchMvc.Domain.Interfaces
+using TechMaturity.Domain.Entities;
+namespace TechMaturity.Domain.Interfaces
 {
     public interface IProductRepository
     {

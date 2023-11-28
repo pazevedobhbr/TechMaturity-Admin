@@ -1,8 +1,8 @@
 ﻿using System;
-using CleanArchMvc.Domain.Entities;
+using TechMaturity.Domain.Entities;
 using MediatR;
 
-namespace CleanArchMvc.Application.Products.Queries
+namespace TechMaturity.Application.Products.Queries
 {
     public class GetProductByIdQuery : IRequest<Product>
     {

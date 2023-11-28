@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace CleanArchMvc.Infra.Data.Migrations
+namespace TechMaturity.Infra.Data.Migrations
 {
     public partial class AddIdentityTablesl : Migration
     {

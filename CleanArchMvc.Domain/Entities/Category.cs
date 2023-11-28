@@ -1,7 +1,7 @@
 ﻿using System;
-using CleanArchMvc.Domain.Validation;
+using TechMaturity.Domain.Validation;
 
-namespace CleanArchMvc.Domain.Entities
+namespace TechMaturity.Domain.Entities
 {
     public sealed class Category : Entity
     {

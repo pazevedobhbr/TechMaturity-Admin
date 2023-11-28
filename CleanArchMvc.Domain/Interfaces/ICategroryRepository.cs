@@ -1,8 +1,8 @@
 ﻿using System;
-using CleanArchMvc.Domain.Entities;
+using TechMaturity.Domain.Entities;
 
 
-namespace CleanArchMvc.Domain.Interfaces
+namespace TechMaturity.Domain.Interfaces
 {
     public interface ICategoryRepository
     {

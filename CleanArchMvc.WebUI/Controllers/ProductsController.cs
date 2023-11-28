@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CleanArchMvc.Application.DTOs;
-using CleanArchMvc.Application.Interfaces;
-using CleanArchMvc.Application.Services;
+using TechMaturity.Application.DTOs;
+using TechMaturity.Application.Interfaces;
+using TechMaturity.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace CleanArchMvc.WebUI.Controllers
+namespace TechMaturity.WebUI.Controllers
 {
     public class ProductsController : Controller
     {

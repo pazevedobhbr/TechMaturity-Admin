@@ -1,4 +1,4 @@
-﻿using CleanArchMvc.Infra.IoC;
+﻿using TechMaturity.Infra.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,14 +1,14 @@
 ﻿using AutoMapper;
-using CleanArchMvc.Application.DTOs;
-using CleanArchMvc.Application.Interfaces;
-using CleanArchMvc.Application.Products.Commands;
-using CleanArchMvc.Application.Products.Queries;
+using TechMaturity.Application.DTOs;
+using TechMaturity.Application.Interfaces;
+using TechMaturity.Application.Products.Commands;
+using TechMaturity.Application.Products.Queries;
 using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace CleanArchMvc.Application.Services
+namespace TechMaturity.Application.Services
 {
     public class ProductService : IProductService
     {

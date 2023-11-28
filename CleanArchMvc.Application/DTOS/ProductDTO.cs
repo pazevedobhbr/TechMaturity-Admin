@@ -3,9 +3,9 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
-using CleanArchMvc.Domain.Entities;
+using TechMaturity.Domain.Entities;
 
-namespace CleanArchMvc.Application.DTOs
+namespace TechMaturity.Application.DTOs
 {
     public class ProductDTO
     {

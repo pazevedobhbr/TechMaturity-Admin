@@ -4,7 +4,7 @@
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace CleanArchMvc.Infra.Data.Migrations
+namespace TechMaturity.Infra.Data.Migrations
 {
     /// <inheritdoc />
     public partial class Inicial : Migration

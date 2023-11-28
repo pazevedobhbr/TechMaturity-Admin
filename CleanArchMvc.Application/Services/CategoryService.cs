@@ -1,11 +1,11 @@
 ﻿using System;
 using AutoMapper;
-using CleanArchMvc.Application.DTOs;
-using CleanArchMvc.Application.Interfaces;
-using CleanArchMvc.Domain.Entities;
-using CleanArchMvc.Domain.Interfaces;
+using TechMaturity.Application.DTOs;
+using TechMaturity.Application.Interfaces;
+using TechMaturity.Domain.Entities;
+using TechMaturity.Domain.Interfaces;
 
-namespace CleanArchMvc.Application.Services
+namespace TechMaturity.Application.Services
 {
     public class CategoryService : ICategoryService
     {

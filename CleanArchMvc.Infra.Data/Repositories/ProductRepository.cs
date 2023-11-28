@@ -1,10 +1,10 @@
 ﻿using System;
-using CleanArchMvc.Domain.Entities;
-using CleanArchMvc.Domain.Interfaces;
-using CleanArchMvc.Infra.Data.Context;
+using TechMaturity.Domain.Entities;
+using TechMaturity.Domain.Interfaces;
+using TechMaturity.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace CleanArchMvc.Infra.Data.Repositories
+namespace TechMaturity.Infra.Data.Repositories
 {
     public class ProductRepository : IProductRepository
     {
