@@ -1,0 +1,129 @@
+﻿
+create table AspNetRoles
+(
+    Id               nvarchar(450) not null
+        constraint PK_AspNetRoles
+            primary key,
+    Name             nvarchar(256),
+    NormalizedName   nvarchar(256),
+    ConcurrencyStamp nvarchar(max)
+)
+go
+
+create table AspNetRoleClaims
+(
+    Id         int identity
+        constraint AspNetRoleClaims_pk
+            primary key,
+    RoleId     nvarchar(450) not null
+        constraint AspNetRoleClaims_AspNetRoles_Id_fk
+            references AspNetRoles,
+    ClaimType  nvarchar(max),
+    ClaimValue nvarchar(max)
+)
+go
+
+create table AspNetUsers
+(
+    Id                   nvarchar(450) not null
+        constraint PK_AspNetUsers
+            primary key,
+    UserName             nvarchar(256),
+    NormalizedUserName   nvarchar(256),
+    Email                nvarchar(256),
+    EmailConfirmed       bit,
+    PasswordHash         nvarchar(max),
+    SecurityStamp        nvarchar(max),
+    ConcurrencyStamp     nvarchar(max),
+    PhoneNumber          nvarchar(max),
+    PhoneNumberConfirmed bit,
+    TwoFactorEnabled     bit,
+    LockoutEnd           datetimeoffset,
+    LockoutEnabled       bit,
+    AccessFailedCount    int,
+    NormalizedEmail      nvarchar(256)
+)
+go
+
+create table AspNetUserClaims
+(
+    Id         int identity
+        constraint AspNetUserClaims_pk
+            primary key,
+    UserId     nvarchar(450) not null
+        constraint FK_AspNetUserClaims_AspNetUsers_UserId
+            references AspNetUsers
+            on delete cascade,
+    ClaimType  nvarchar(max),
+    ClaimValue nvarchar(max)
+)
+go
+
+create table AspNetUserLogins
+(
+    LoginProvider       nvarchar(450) not null,
+    ProviderKey         nvarchar(450) not null,
+    ProviderDisplayName nvarchar(max),
+    UserId              nvarchar(450)
+        constraint FK_AspNetUserLogins_AspNetUsers_UserId
+            references AspNetUsers
+            on delete cascade,
+    constraint PK_AspNetUserLogins
+        primary key (LoginProvider, ProviderKey)
+)
+go
+
+create table AspNetUserRoles
+(
+    UserId nvarchar(450) not null
+        constraint FK_AspNetUserRoles_AspNetUsers_UserId
+            references AspNetUsers
+            on delete cascade,
+    RoleId nvarchar(450) not null
+        constraint FK_AspNetUserRoles_AspNetRoles_RoleId
+            references AspNetRoles
+            on delete cascade,
+    constraint PK_AspNetUserRoles
+        primary key (UserId, RoleId)
+)
+go
+
+create table AspNetUserTokens
+(
+    UserId        nvarchar(450) not null
+        constraint FK_AspNetUserTokens_AspNetUsers_UserId
+            references AspNetUsers,
+    LoginProvider nvarchar(450) not null,
+    Name          nvarchar(450) not null,
+    Value         nvarchar(max),
+    constraint PK_AspNetUserTokens
+        primary key (UserId, LoginProvider, Name)
+)
+go
+
+create table Categories
+(
+    Id   int identity
+        constraint PK_Categories
+            primary key,
+    Name nvarchar(100)
+)
+go
+
+create table Products
+(
+    Id          int identity
+        constraint PK_Products
+            primary key,
+    Name        nvarchar(100)  not null,
+    Description nvarchar(200)  not null,
+    Price       decimal(10, 2) not null,
+    Stock       int            not null,
+    Image       nvarchar(max)  not null,
+    CategoryId  int            not null
+        constraint FK_Products_Categories_CategoryId
+            references Categories
+            on delete cascade
+)
+go
+

@@ -1,0 +1,107 @@
+﻿
+create table AspNetRoles
+(
+    Id               nvarchar(450) not null,
+    Name             nvarchar(256),
+    NormalizedName   nvarchar(256),
+    ConcurrencyStamp nvarchar(2000),
+    primary key (Id)
+);
+
+create table AspNetRoleClaims
+(
+    Id         int NOT NULL AUTO_INCREMENT,
+    RoleId     nvarchar(450) not null,
+    ClaimType  nvarchar(2000),
+    ClaimValue nvarchar(2000),
+    primary key (Id),
+    foreign key (RoleId) references AspNetRoles(Id)
+);
+
+create table AspNetUsers	
+(
+    Id                   nvarchar(450) not null,
+    UserName             nvarchar(256),
+    NormalizedUserName   nvarchar(256),
+    Email                nvarchar(256),
+    EmailConfirmed       bit,
+    PasswordHash         nvarchar(2000),
+    SecurityStamp        nvarchar(2000),
+    ConcurrencyStamp     nvarchar(2000),
+    PhoneNumber          nvarchar(2000),
+    PhoneNumberConfirmed bit,
+    TwoFactorEnabled     bit,
+    LockoutEnd           datetime,
+    LockoutEnabled       bit,
+    AccessFailedCount    int,
+    NormalizedEmail      nvarchar(256),
+    primary key (Id)    
+);
+
+
+create table AspNetUserClaims
+(
+    Id         int  not null,
+    UserId     nvarchar(450) not null,
+    ClaimType  nvarchar(2000),
+    ClaimValue nvarchar(2000),
+    primary key (Id),
+    foreign key (UserId) references AspNetUsers(Id)
+    on delete cascade
+);
+
+create table AspNetUserLogins
+(
+    LoginProvider       nvarchar(450) not null,
+    ProviderKey         nvarchar(450) not null,
+    ProviderDisplayName nvarchar(2000),
+    UserId              nvarchar(450),
+    primary key (LoginProvider, ProviderKey),
+    foreign key (UserId) references AspNetUsers(Id)
+    on delete cascade
+);
+
+create table AspNetUserRoles
+(
+    UserId nvarchar(450) not null,
+    RoleId nvarchar(450) not null,
+	primary key (UserId, RoleId),
+    foreign key (UserId) references AspNetUsers(Id)
+    on delete cascade,
+    foreign key (RoleId) references AspNetRoles(Id)
+    on delete cascade   
+);
+
+
+create table AspNetUserTokens
+(
+    UserId        nvarchar(450) not null,
+    LoginProvider nvarchar(450) not null,
+    Name          nvarchar(100) not null,
+    Value         nvarchar(2000),
+	primary key (UserId, LoginProvider,Name),
+    foreign key (UserId) references AspNetUsers(Id)
+);
+
+create table Categories
+(
+    Id   int not null auto_increment,
+    Name nvarchar(100),
+	primary key (Id)    
+);
+
+create table Products
+(
+    Id          int not null auto_increment,
+    Name        nvarchar(100)  not null,
+    Description nvarchar(200)  not null,
+    Price       decimal(10, 2) not null,
+    Stock       int            not null,
+    Image       nvarchar(2000)  not null,
+    CategoryId  int            not null,
+	primary key (Id),
+    foreign key (CategoryId) references Categories(Id)
+    on delete cascade
+);
+
+
