@@ -23,4 +23,8 @@
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\CategoriesController %28copy%29.cs" />
+    <Compile Remove="Controllers\PillarsController %28copy%29.cs" />
+  </ItemGroup>
 </Project>

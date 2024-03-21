@@ -15,7 +15,7 @@ namespace TechMaturity.Infra.Data.Context
 
             var optionsBuilder = new DbContextOptionsBuilder<ApplicationDbContext>();
 
-            optionsBuilder.UseSqlServer("Server=localhost;Database=TechMaturityCadDb;User Id=SA;Password=12345678};TrustServerCertificate=true");
+            optionsBuilder.UseSqlServer("Server=localhost;Database=TechMaturityCadDb;User Id=SA;Password=DB_Password};TrustServerCertificate=true");
 
 
             //optionsBuilder.UseMySQL("Server=localhost;Port=3306;Database=TechMaturityDb;User Id=SA;Password=12345678};TrustServerCertificate=true");

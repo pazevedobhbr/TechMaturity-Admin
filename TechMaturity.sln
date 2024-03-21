@@ -17,6 +17,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechMaturity.Domain.Tests",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechMaturity.API", "TechMaturity.API\TechMaturity.API.csproj", "{79441A28-BD1F-445B-AA60-BAA0A5ADD95A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts Tabelas", "Scripts Tabelas", "{4867B7A7-A461-48B1-8E4C-0AAEF632CED0}"
+	ProjectSection(SolutionItems) = preProject
+		DDL Azure Sql.txt = DDL Azure Sql.txt
+		DDL MySql.txt = DDL MySql.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

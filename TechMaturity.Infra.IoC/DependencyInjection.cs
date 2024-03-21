@@ -36,9 +36,13 @@ namespace TechMaturity.Infra.IoC
 
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IPillarRepository, PillarRepository>();
+            services.AddScoped<IPracticeRepository, PracticeRepository>();
 
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IPillarService, PillarService>();
+            services.AddScoped<IPracticeService, PracticeService>();
 
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 

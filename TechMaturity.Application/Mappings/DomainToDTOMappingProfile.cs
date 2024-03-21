@@ -10,7 +10,10 @@ namespace TechMaturity.Application.Mappings
         public DomainToDTOMappingProfile()
         {
             CreateMap<Category, CategoryDTO>().ReverseMap();
+            CreateMap<Pillar, PillarDTO>().ReverseMap();
+            CreateMap<Practice, PracticeDTO>().ReverseMap();
             CreateMap<Product, ProductDTO>().ReverseMap();
+
         }
     }
 }
