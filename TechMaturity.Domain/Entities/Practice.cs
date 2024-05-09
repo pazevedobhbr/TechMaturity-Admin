@@ -26,7 +26,7 @@ namespace TechMaturity.Domain.Entities
             ValidateDomain(name);
         }
 
-        //public ICollection<Product> Products { get; set; }
+        public ICollection<Pillar> Pillars { get; set; }
 
         private void ValidateDomain(string name)
         {

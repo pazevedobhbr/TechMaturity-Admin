@@ -25,9 +25,8 @@ namespace TechMaturity.Domain.Entities
         {
             ValidateDomain(name);
         }
-
-        //public ICollection<Product> Products { get; set; }
-
+        public ICollection<Capability> Capabilities { get; set; }
+        
         private void ValidateDomain(string name)
         {
             DomainExceptionValidation.When(String.IsNullOrEmpty(name), "Invalid name. Name is required.");

@@ -16,6 +16,7 @@ namespace TechMaturity.Infra.Data.EntitiesConfiguration
             builder.HasOne(e => e.Pillar).WithMany(e => e.Capabilities).HasForeignKey(e => e.PillarID);
           
 
+
         }
 
 

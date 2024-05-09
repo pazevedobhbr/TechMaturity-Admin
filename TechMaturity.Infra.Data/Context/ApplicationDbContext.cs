@@ -16,7 +16,9 @@ namespace TechMaturity.Infra.Data.Context
         public DbSet<Product> Products { get; set; }
         public DbSet<Pillar> Pillars { get; set; }
         public DbSet<Practice> Practices { get; set; }
-
+        public DbSet<Capability> Capabilities { get; set; }
+        
+        public DbSet<Criteria> Criteria { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

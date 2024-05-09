@@ -10,42 +10,42 @@ namespace TechMaturity.Infra.Data.Repositories
 {
     public class CriteriaRepository :ICriteriaRepository
     {
-        private ApplicationDbContext _CriteriaContext;
+        private readonly ApplicationDbContext _CriteriaContext;
         public CriteriaRepository(ApplicationDbContext context)
         {
             _CriteriaContext = context;
         }
 
-        public async Task<Criteria> CreateAsync(Criteria Criteria)            
+        public async Task<Criteria> CreateAsync(Criteria criteria)            
         {
-            _CriteriaContext.Add(Criteria);
+            _CriteriaContext.Add(criteria);
             await _CriteriaContext.SaveChangesAsync();
-            return Criteria;
+            return criteria;
         }
         public async Task<IEnumerable<Criteria>> GetCriteriasAsync()
         {
-            return await _CriteriaContext.Criterias.ToListAsync();
+            return await _CriteriaContext.Criteria.ToListAsync();
 
         }
 
         public async Task<Criteria> GetByIcAsync(int? id)
         {
-            return await _CriteriaContext.Criterias.FindAsync(id);
+            return await _CriteriaContext.Criteria.FindAsync(id);
         }
 
 
-        public async Task<Criteria> RemoveAsync(Criteria Criteria)
+        public async Task<Criteria> RemoveAsync(Criteria criteria)
         {
-            _CriteriaContext.Remove(Criteria);
+            _CriteriaContext.Remove(criteria);
             await _CriteriaContext.SaveChangesAsync();
-            return Criteria; 
+            return criteria; 
         }
 
-        public async Task<Criteria> UpdateAsync(Criteria Criteria)
+        public async Task<Criteria> UpdateAsync(Criteria criteria)
         {
-            _CriteriaContext.Update(Criteria);
+            _CriteriaContext.Update( criteria);
             await _CriteriaContext.SaveChangesAsync();
-            return Criteria;
+            return criteria;
         }
     }
 }

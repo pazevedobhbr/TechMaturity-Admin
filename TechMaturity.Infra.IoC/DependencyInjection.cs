@@ -38,13 +38,17 @@ namespace TechMaturity.Infra.IoC
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IPillarRepository, PillarRepository>();
             services.AddScoped<IPracticeRepository, PracticeRepository>();
-
+            services.AddScoped<ICapabilityRepository, CapabilityRepository>();
+            services.AddScoped<ICriteriaRepository, CriteriaRepository>();
+            
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IPillarService, PillarService>();
             services.AddScoped<IPracticeService, PracticeService>();
+            services.AddScoped<ICapabilityService,CapabilityService>();
+            services.AddScoped<ICriteriaService, CriteriaService>();
 
-            services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
+            services.AddAutoMapper(typeof(DomainToDtoMappingProfile));
 
             var myhandlers = AppDomain.CurrentDomain.Load("TechMaturity.Application");
             services.AddMediatR(myhandlers);
